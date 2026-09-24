@@ -74,3 +74,7 @@ The helper targets only `codelit-io/codelit-plugin` and creates it with public v
 ## License and brand
 
 No open-source license has been selected or added to this package. A public-repository request is not treated as a choice of MIT, Apache, or another license. The publisher should select the intended code/content license and separate brand-use terms before inviting third-party reuse.
+
+## Public MCP companion
+
+A separate read-only [MCP service](mcp/README.md) is available at `https://codelit-public-mcp.vercel.app/mcp`. It lists public planning workflows and retrieves bundled planning templates. The published 1.1.1 ZIP remains the tested skills-only package; this service is a separately deployed companion for the OpenAI draft. It does not access Codelit accounts or execute plans.
