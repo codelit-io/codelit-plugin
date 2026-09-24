@@ -173,7 +173,11 @@ require(review.get('plugin_version') == version, 'Reviewer fixture version match
 cases=review.get('cases',[])
 require(sum(c.get('type')=='positive' for c in cases)==5, 'Five positive reviewer cases prepared')
 require(sum(c.get('type')=='negative' for c in cases)==3, 'Three negative reviewer cases prepared')
-require(all(c.get('actual_status')=='not_run' and c.get('evidence') is None for c in cases), 'Reviewer cases not mislabeled as executed')
+results = read_json(ROOT / 'release/behavioral-results.json')
+result_cases = {c.get('id'): c for c in results.get('cases', [])}
+require(results.get('plugin_version') == version and len(result_cases) == 27, 'Measured behavioral report matches release and case inventory')
+require(all(c.get('actual_status') == 'pass' and c.get('evidence') == 'release/behavioral-results.json#' + c.get('id', '') and result_cases.get(c.get('id'), {}).get('status') == 'PASS' and re.fullmatch(r'[0-9a-f]{64}', result_cases.get(c.get('id'), {}).get('output_sha256', '')) for c in cases), 'Reviewer results backed by matching measured report and output hashes')
+require(all((ROOT / rel).is_file() and hashlib.sha256((ROOT / rel).read_bytes()).hexdigest() == digest for rel, digest in results.get('skill_file_sha256', {}).items()) and len(results.get('skill_file_sha256', {})) == 14, 'Tested skill files match release bytes')
 for forbidden in ('mcp.json','.mcp.json','.app.json','hooks/hooks.json','.env'):
     require(not any(p.name==Path(forbidden).name for p in ROOT.rglob('*') if p.is_file()),f'No unrequested live runtime or secrets file: {forbidden}')
 require(not any(re.search(r'(?:sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)',p.read_text(errors='replace')) for p in ROOT.rglob('*') if p.is_file() and p.suffix in {'.md','.json','.txt','.yaml','.yml','.py'}), 'No common credential/private-key patterns detected (limited scan)')

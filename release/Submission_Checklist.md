@@ -12,13 +12,13 @@ Prepared September 23, 2026. Package: Codelit 1.1.1 (`codelit-copilot`).
 
 ## Still required or unverified
 
-- Run the manual behavioral tests in a fresh conversation with the updated plugin and record actual output evidence. The prepared cases are not passing test results.
-- Verify the intended individual or business identity in the OpenAI Platform. Use Codelit as publisher branding only with the matching authority.
-- Confirm the correct publishing organization/project and submission write permission (currently labelled Apps Management).
+- Completed: 27 isolated synthetic behavioral/reviewer cases passed; see Behavioral_Results.md for scope and evidence hashes.
+- Completed: publisher-selected individual identity applied in the portal; private verification details are not stored here.
+- Draft edits were saved in the publisher-confirmed existing draft.
 - Review the linked website privacy/terms for coverage of this skills-only plugin and decide whether a dedicated HTTPS support page is needed. No legal attestation has been completed here.
 - Choose supported countries or regions; do not assume worldwide availability.
-- Create a Skills only submission draft in the official OpenAI plugin submission portal, upload this package, review the imported copy and assets, and complete any required portal fields.
-- Allow the platform's skill safety/security scans to complete. These are not the local validator.
+- Resolve portal submission type: only With MCP is currently offered. The existing authorized draft has listing, icons, prompts, reviewer cases and all five skills, but requires an MCP URL. Do not add a server to this skills-only release.
+- Completed: all five platform skill safety/security scans passed. These are separate from local validation.
 - Complete policy attestations only after the publisher verifies their accuracy, then submit for review.
 - After approval, choose when to publish. Submission does not immediately publish the plugin.
 

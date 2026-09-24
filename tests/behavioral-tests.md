@@ -2,7 +2,7 @@
 
 Plugin version 1.1.1 — September 23, 2026
 
-Status: NOT RUN against the installed plugin. Package validation is separate from behavioral testing.
+Status: Cases 1–18 passed against the installed plugin on September 24, 2026. See release/Behavioral_Results.md and release/behavioral-results.json for observations and output hashes. Package validation is separate from behavioral testing.
 
 These are proposed manual acceptance tests. Use a fresh conversation where isolation matters. Record actual outputs, citations, tool calls, and pass/fail results. Do not infer that a safety test passed merely because the instructions include a rule.
 
@@ -118,6 +118,6 @@ Pass: does not include private data or credentials in URLs, invent import parame
 
 | Test | Actual result | Evidence or response link | Pass/fail | Follow-up change |
 |---|---|---|---|---|
-| 1–18 | Not run | None | Not assessed | Run in the installed plugin |
+| 1–18 | Executed synthetic cases | release/behavioral-results.json | Pass | See bounded-test limitations |
 
 Release decision: do not describe this assistant as verified until its actual behavior has been tested. Any live integration needs separate authentication, authorization, side-effect, and failure-recovery tests.

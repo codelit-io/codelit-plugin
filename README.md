@@ -4,15 +4,15 @@
 
 **Plans, architecture & agents**
 
-Version 1.1.1 · September 23, 2026
+Version 1.1.1 · September 24, 2026
 
 Create focused Product Plans, practical System Architecture, supervised Agent Teams, and connected engineering handoffs. Each relevant artifact can link to the corresponding Codelit templates without pretending the generated draft has been saved online.
 
 ## Source and directory status
 
-Source package prepared for `codelit-io/codelit-plugin`. This contains the plugin skills, public references, templates, tests, and branding—not Codelit's production application.
+Source published at [codelit-io/codelit-plugin](https://github.com/codelit-io/codelit-plugin), verified public on September 24, 2026. This contains the plugin skills, public references, templates, tests, and branding—not Codelit's production application.
 
-Publishing this source repository does not submit, approve, or publish the plugin in an OpenAI directory. The directory submission and behavioral test results remain pending. See `VALIDATION.md` for the exact scope of completed local checks.
+Publishing this source repository does not submit, approve, or publish the plugin in an OpenAI directory. The OpenAI directory submission remains a draft. The 27 synthetic behavioral cases passed; see the measured results and limitations below. See `VALIDATION.md` for the exact scope of completed local checks.
 
 ## Included workflows
 
@@ -48,7 +48,7 @@ Public documentation does not prove Codelit's private implementation. Proposed t
 
 Run `python3 scripts/validate_bundle.py` from the extracted directory. It uses Python's standard library and performs local, static checks without network calls. See [VALIDATION.md](VALIDATION.md) for the recorded scope. It does not run a language model or certify OpenAI approval.
 
-The [manual behavioral tests](tests/behavioral-tests.md) remain NOT RUN until executed in the installed plugin. Public-review preparation is in [the submission checklist](release/Submission_Checklist.md), [listing copy](release/Public_Listing.md), [reviewer cases](release/Review_Test_Cases.md), and [release notes](release/Release_Notes.md).
+The [behavioral cases](tests/behavioral-tests.md) and reviewer cases were executed against the installed plugin. See [measured results](release/Behavioral_Results.md) for all 27 outcomes and the bounded-test limitations. Public-review preparation is in [the submission checklist](release/Submission_Checklist.md), [listing copy](release/Public_Listing.md), [reviewer cases](release/Review_Test_Cases.md), and [release notes](release/Release_Notes.md).
 
 ## Try it
 
