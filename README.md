@@ -77,4 +77,6 @@ No open-source license has been selected or added to this package. A public-repo
 
 ## Public MCP companion
 
-A separate read-only [MCP service](mcp/README.md) is available at `https://codelit-public-mcp.vercel.app/mcp`. It lists public planning workflows and retrieves bundled planning templates. The published 1.1.1 ZIP remains the tested skills-only package; this service is a separately deployed companion for the OpenAI draft. It does not access Codelit accounts or execute plans.
+See the [connection guide and real ChatGPT Developer Mode demo](https://codelit.io/docs/chatgpt-and-mcp) for setup, example prompts, troubleshooting, and support. The public MCP server is available now; the ChatGPT directory plugin is submitted for review and is not yet publicly listed.
+
+A separate read-only [MCP service](mcp/README.md) is available at `https://codelit-public-mcp.vercel.app/mcp`. It lists public planning workflows and retrieves bundled planning templates. The published 1.1.1 ZIP remains the tested skills-only package; this service is a separately deployed companion for the OpenAI submission. It does not access Codelit accounts or execute plans.
