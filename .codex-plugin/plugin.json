@@ -1,0 +1,44 @@
+{
+  "name": "codelit-copilot",
+  "version": "1.1.1",
+  "description": "Create Product Plans, System Architecture, supervised Agent Teams, and implementation handoffs with relevant Codelit template links.",
+  "author": {
+    "name": "Codelit",
+    "url": "https://codelit.io/"
+  },
+  "homepage": "https://codelit.io/",
+  "keywords": [
+    "codelit",
+    "product-planning",
+    "architecture",
+    "agent-teams",
+    "human-approval"
+  ],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Codelit",
+    "shortDescription": "Plans, architecture & agents",
+    "longDescription": "Turn an idea into a focused Product Plan, practical System Architecture, and supervised Agent Team. Define first-release scope, user journeys, components, data flows, tool permissions, handoffs, approval gates, and tests. Connect the reviewed work into an implementation plan or a scoped Codex handoff. Each relevant artifact can include a link to Codelit templates so you can explore the next step.\n\nThis skills-only plugin provides planning guidance, reference material, and reusable templates. It does not connect to your Codelit account, transfer generated drafts to Codelit, run independent agents, or deploy software. Live actions require a separately configured, authorized integration.",
+    "developerName": "MOHAMMED WALID SHARIF",
+    "category": "Productivity",
+    "capabilities": [
+      "Create Product Plans and acceptance criteria",
+      "Design and review System Architecture",
+      "Design supervised Agent Teams and approval boundaries",
+      "Prepare evidence-linked implementation handoffs",
+      "Link relevant artifacts to Codelit templates"
+    ],
+    "websiteURL": "https://codelit.io/",
+    "privacyPolicyURL": "https://codelit.io/privacy",
+    "termsOfServiceURL": "https://codelit.io/terms",
+    "defaultPrompt": [
+      "Use Codelit to create a Product Plan for my idea with first-release scope, user stories, and acceptance criteria.",
+      "Use Codelit to explain this architecture simply, then review failure paths, data boundaries, and approvals.",
+      "Use Codelit to design a small agent team with tool permissions, handoffs, approval gates, and tests."
+    ],
+    "brandColor": "#0A0A0A",
+    "brandColorDark": "#FAFAFA",
+    "composerIcon": "./assets/codelit-logo.png",
+    "logo": "./assets/codelit-logo.png"
+  }
+}

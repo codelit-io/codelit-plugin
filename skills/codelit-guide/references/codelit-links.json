@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-09-23",
+  "check_method": "Official public page content inspected through web retrieval; authenticated flows were not tested.",
+  "scope": "Navigation only. These URLs do not save or import the generated draft.",
+  "routes": [
+    {
+      "asset_type": "product-plan",
+      "label": "Explore Product Plan starters in Codelit",
+      "url": "https://codelit.io/specs",
+      "source_title": "Product Plan starters"
+    },
+    {
+      "asset_type": "architecture",
+      "label": "Explore Architecture templates in Codelit",
+      "url": "https://codelit.io/templates",
+      "source_title": "Architecture templates"
+    },
+    {
+      "asset_type": "agent-team",
+      "label": "Explore Agent Team templates in Codelit",
+      "url": "https://codelit.io/agent-templates",
+      "source_title": "Agent Team templates"
+    },
+    {
+      "asset_type": "plan-and-ship",
+      "label": "Explore Plan & Ship in Codelit",
+      "url": "https://codelit.io/plan-and-ship",
+      "source_title": "Plan & Ship"
+    }
+  ],
+  "specific_template_policy": "Discover exact URLs from current official Codelit pages and verify the target before use; otherwise use the relevant collection. Do not invent slugs."
+}

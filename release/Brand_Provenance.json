@@ -1,0 +1,13 @@
+{
+  "asset": "assets/codelit-logo.png",
+  "source": "Publisher supplied PNG in the update request",
+  "dimensions": [
+    600,
+    600
+  ],
+  "format": "PNG",
+  "size_bytes": 15388,
+  "sha256": "56df557b948c21b2c582d14aeeb5ef1f2c96a1ead546caf934288b84f9251881",
+  "transformations": "None; exact bytes copied",
+  "rights_status": "Provided by the requesting publisher for this update; not an independent ownership verification"
+}

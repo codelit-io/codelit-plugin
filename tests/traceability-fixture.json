@@ -1,0 +1,57 @@
+{
+  "status": "illustrative_not_executed",
+  "requirements": [
+    {
+      "id": "P-01",
+      "owner": "human-reviewer"
+    }
+  ],
+  "components": [
+    {
+      "id": "C-01"
+    },
+    {
+      "id": "C-02"
+    }
+  ],
+  "agents": [
+    {
+      "id": "A-01"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "W-01"
+    }
+  ],
+  "tests": [
+    {
+      "id": "T-01",
+      "status": "not_run"
+    },
+    {
+      "id": "T-02",
+      "status": "not_run"
+    }
+  ],
+  "links": [
+    {
+      "requirement": "P-01",
+      "components": [
+        "C-01",
+        "C-02"
+      ],
+      "owner": "A-01",
+      "task": "W-01",
+      "tests": [
+        "T-01",
+        "T-02"
+      ]
+    }
+  ],
+  "execution": {
+    "run_id": null,
+    "provider_receipt": null,
+    "state": "not_executed"
+  }
+}
